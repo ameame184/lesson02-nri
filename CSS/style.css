@@ -1,0 +1,272 @@
+/* ヘッダー */
+.header {
+    border: 1px solid #000000;
+    width: 100%;
+    margin-bottom: 70px;
+    height: 60px;
+}
+
+.header-logo {
+    height: 0px;
+    float: left;
+    padding-left: 55px;
+}
+
+.header-logo a {
+    text-decoration: none;
+}
+
+.header-logo .icon-nri-logo {
+    border: 1px solid #000000;   
+    font-size: 56px;
+    color: #005BAC;
+}
+
+.header-right {
+    float: right;
+    border: 1px solid #000000;
+}
+
+.header-right ul li:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.right-menu {
+    display: flex;
+    width: 50%;
+}
+
+.header-right .right-menu li {
+    list-style: none;
+    
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #005BAC;
+}
+
+.header-right .right-menu .header-search {
+    font-size: 26px;
+    padding-top: 8px;
+}
+
+.header-right .right-menu .header-global {
+    font-size: 26px;
+    padding-top: 8px;
+    margin-left: 35px;
+}
+
+.header-hamburger img {
+    clear: both;
+    height: 60px;
+    width: 60px;
+    margin-left: 44px;
+    color: #005BAC;
+}
+
+/* パンくずナビ */
+#pageBody .pageNavi {
+    margin-bottom: 25px;
+}
+
+#pageBody .pageNavi .topicPath {
+    margin-left: 140px;
+}
+
+#pageBody .pageNavi p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #999999;
+}
+
+/* トップイメージ */
+#pageBody .nriImage {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#pageBody .topImage img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.imageTitle p {
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.imageTitle h1 {
+    position: absolute;
+    top: 67px;
+    left: 140px;
+    font-size: 28px;
+    line-height: 42px;
+    color: #ffffff;
+}
+
+/* snsShare */
+#pageBody {
+    width: 100%;
+}
+
+#pageBody .sns-share {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+#pageBody .sns-share .share {
+    font-family: Ariel;
+    font-size: 10px;
+}
+
+#pageBody .sns-share .icon-facebook {
+    font-size: 25px;
+    margin-left: 23px;
+}
+
+#pageBody .sns-share .icon-twitter {
+    font-size: 25px;
+    margin-left: 23px;
+}
+
+#pageBody .sns-share .icon-linkedin {
+    font-size: 25px;
+    margin-left: 23px;
+}
+
+
+/* NRIのビジネス戦略 */
+.nri-bussiness {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nri-bussiness .nri-contents {
+    width: 80%;
+    margin: 0 auto;
+}
+    
+.nri-bussiness .nri-contents .title-image {
+    float: left;
+    width: 23px;
+    height: 23px;
+    margin-top: 6px;
+    margin-right: 15px;
+}
+
+.nri-bussiness .nri-contents h2 {
+    font-size: 22px;
+}
+
+.nri-bussiness .nri-contents h2 .sub-title {
+    vertical-align: top;
+}
+
+.nri-bussiness .nri-contents .bussiness-content {
+    clear: both;
+    margin-bottom: 60px;
+}
+
+.nri-bussiness .nri-contents img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 33px;
+}
+
+.nri-bussiness .btn {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    background-color: #005bac;
+    border: 1px solid #005bac;
+}
+
+.nri-bussiness .btn a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nri-bussiness .btn img {
+    height: 25px;
+    width: 30px;
+}
+
+.nri-bussiness p img {
+    vertical-align: middle;
+    line-height: 1.2;
+}
+
+/* DXの取り組み事例 */
+.nri-contents .jornal-image {
+    width: 820px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.nri-contents .jornal-image .active-case {
+    width: 185px;
+    margin-right: 20px;
+}
+
+.nri-contents .jornal-image .active-case .image-title {
+    background-color: #005BAC;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 500;
+    width: 175px;
+    padding: 5px 5px;
+    position: relative;
+    top: 40px;
+}
+
+.nri-contents .jornal-image .active-case img {
+    width: 185px;
+    height: 185px;
+    margin-bottom: 0;
+}
+
+.nri-contents .jornal-image .active-case p {
+    font-size: 14px;
+}
+
+.nri-contents .jornal-image .active-case a {
+    font-size: 12px;
+    line-height: 1.4;
+    border: 1px solid #CCCCCC;
+    text-decoration: none;
+    color: #333333;
+    height: auto;
+    padding: 6px 10px;
+    border-radius: 10px;
+}
+
+.nav-place a {
+    position: relative;
+}
+
+.nav-place a::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 16px; 
+    top: calc(50% - 2px); 
+    border-top: solid 1px;
+    border-right: solid 1px;
+    transform: rotate(45deg) translateY(-50%);
+    color: #333333;
+}
