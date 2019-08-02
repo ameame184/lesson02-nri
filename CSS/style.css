@@ -68,6 +68,10 @@
 }
 
 /* パンくずナビ */
+#pageBody {
+    margin-bottom: 120px;
+}
+
 #pageBody .pageNavi {
     margin-bottom: 25px;
 }
@@ -119,7 +123,8 @@
 #pageBody .sns-share {
     display: flex;
     justify-content: flex-end;
-    width: 80%;
+    width: 820px;
+    margin: 0 auto;
     margin-bottom: 30px;
 }
 
@@ -151,7 +156,7 @@
 }
 
 .nri-bussiness .nri-contents {
-    width: 80%;
+    width: 820px;
     margin: 0 auto;
 }
     
@@ -253,20 +258,303 @@
     border-radius: 10px;
 }
 
-.nav-place a {
-    position: relative;
+.nri-bussiness .derection {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.nav-place a::after {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 5px;
-    position: absolute;
-    right: 16px; 
-    top: calc(50% - 2px); 
-    border-top: solid 1px;
-    border-right: solid 1px;
-    transform: rotate(45deg) translateY(-50%);
+.nri-bussiness .derection-first {
+    float: left;
+}
+
+.nri-bussiness .derection-second {
+    float: right;
+}
+
+.nri-bussiness .derection a {
+    color: #0c419a;
+    text-decoration: none;
+}
+
+.nri-bussiness .derection a:hover {
+    text-decoration: underline;
+}
+
+.nri-bussiness .nri-strength {
+    clear: both;
+    width: 820px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-bottom: 35px;
+    background-color: #DEECF8;
+}
+
+.nri-bussiness .nri-strength .list-title {
+    font-size: 16px;
     color: #333333;
+    line-height: 30px;
+    padding: 30px 0 0 20px;
+}
+
+.nri-bussiness .nri-strength .box-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nri-bussiness .nri-strength .box-cell li {
+    list-style: none;
+    width: 195px;
+    height: 40px;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0px 10px 10px 10px;
+    line-height: 1.2;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    display: table;
+}
+
+.nri-bussiness .nri-strength .box-cell li a {
+    text-decoration: none;
+    font-size: 16px;
+    word-break: normal;
+    color: #0c419a;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.nri-bussiness .nri-strength .box-cell2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nri-bussiness .nri-strength .box-cell2 li {
+    list-style: none;
+    width: 195px;
+    height: 20px;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 10px;
+    line-height: 1.2;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    display: table;
+}
+
+.nri-bussiness .nri-strength .box-cell2 a {
+    text-decoration: none;
+    font-size: 16px;
+    word-break: normal;
+    color: #0c419a;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#pageBody .nri-bussiness .sns-share {
+    margin-top: 65px;
+}
+
+/* 企業情報 */
+#pageBody2 {
+    width: 1000px;
+    margin: 0 auto 60px auto;
+    margin-bottom: 50px;
+}
+
+#pageBody2 .CompanyInfo {
+    width: 100%;
+}
+
+#pageBody2 .CompanyInfo h2 {
+    font-size: 20px;
+    line-height: 38px;
+    color: #333333;
+    border-top: 2px solid #333;
+    border-bottom: 1px dotted #999;
+    padding: 30px 0;
+}
+
+#pageBody2 .CompanyInfo .section-index {
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+#pageBody2 .CompanyInfo h3 {
+    font-size: 16px;
+    line-height: 30px;
+    color: #333333;
+}
+
+#pageBody2 .CompanyInfo ul {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#pageBody2 .CompanyInfo ul li {
+    list-style: none;
+    width: 250px;
+}
+
+#pageBody2 .CompanyInfo ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0c419a;
+    font-size: 14px;
+    width: 250px;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+#pageBody2 .CompanyInfo ul li a:hover {
+    text-decoration: underline;
+}
+
+#pageBody2 .CompanyInfo .section-previous {
+    margin-top: 30px;
+}
+
+.follow-us {
+    width: 100%;
+    text-align: center;
+}
+
+.follow-us .sns-share {
+    padding: 40px 0;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+}
+
+.follow-us .sns-share .share {
+    font-size: 20px;
+    font-weight: 700;
+    color: #005bac;
+}
+
+.follow-us .sns-share .icon-facebook {
+    font-size: 28px;
+    margin-left: 35px;
+}
+
+.follow-us .sns-share .icon-twitter {
+    font-size: 28px;
+    margin-left: 35px;
+}
+
+.follow-us .sns-share .icon-linkedin {
+    font-size: 28px;
+    margin-left: 35px;
+}
+
+/* フッター */
+footer {
+    padding-bottom: 120px;
+}
+
+#footer {
+    width: 1000px;
+    margin: 40px auto;
+}
+
+#footer .footer-index {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#footer .footer-index .section-index {
+    box-sizing: border-box;
+    width: 250px;
+    padding: 0 10px;
+}
+
+#footer .footer-index .section-index:first-child {
+    padding-left: 0;
+}
+
+#footer .footer-index .section-index:last-child {
+    padding-right: 0;
+}
+
+#footer .footer-index .section-index h3 {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 15px 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer .footer-index .section-index h3 a {
+    display: inline-block;
+    width: 100%;
+    color: #666;
+    text-decoration: none;
+}
+
+#footer .footer-index .section-index h3 a:hover {
+    text-decoration: underline;
+}
+
+#footer .footer-index .section-index ul {
+    width: 100%;
+}
+
+#footer .footer-index .section-index ul li {
+    list-style: none;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+#footer .footer-index .section-index ul li a {
+    display: inline-block;
+    color: #666;
+    text-decoration: none;
+    width: 100%;
+}
+
+#footer .footer-index .section-index ul li a:hover {
+    text-decoration: underline;   
+}
+
+#footer .globalNavi {
+    width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+#footer .globalNavi ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+#footer .globalNavi ul li {
+    list-style: none;
+    line-height: 12px;
+    border-left: 1px solid #999;
+    padding: 0 15px;
+}
+
+#footer .globalNavi ul li:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+#footer .globalNavi ul li:last-child {
+    padding-right: 0;
+}
+
+#footer .globalNavi ul li a {
+    font-size: 12px;
+    color: #999;
+    text-decoration: none;
+}
+
+#footer .copy-right p{
+    font-size: 10px;
+    color: #333;
 }
