@@ -1,9 +1,14 @@
 /* ヘッダー */
 .header {
-    border: 1px solid #000000;
     width: 100%;
     margin-bottom: 70px;
     height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: #FFFFFF;
 }
 
 .header-logo {
@@ -17,14 +22,12 @@
 }
 
 .header-logo .icon-nri-logo {
-    border: 1px solid #000000;   
     font-size: 56px;
     color: #005BAC;
 }
 
 .header-right {
     float: right;
-    border: 1px solid #000000;
 }
 
 .header-right ul li:after {
@@ -77,6 +80,7 @@
 }
 
 #pageBody .pageNavi .topicPath {
+    margin-top: 60px;
     margin-left: 140px;
 }
 
