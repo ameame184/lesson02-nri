@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?h46kq9');
-  src:  url('fonts/icomoon.eot?h46kq9#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?h46kq9') format('truetype'),
-    url('fonts/icomoon.woff?h46kq9') format('woff'),
-    url('fonts/icomoon.svg?h46kq9#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2399kz');
+  src:  url('fonts/icomoon.eot?2399kz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2399kz') format('truetype'),
+    url('fonts/icomoon.woff?2399kz') format('woff'),
+    url('fonts/icomoon.svg?2399kz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,12 +34,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-nri-logo:before {
-  content: "\e90c";
-}
-.icon-hamburger:before {
-  content: "\e905";
-}
 .icon-mono_linkedin:before {
   content: "\e900";
 }
@@ -79,4 +73,16 @@
   content: "\e90b";
   margin-left: -1em;
   color: rgb(254, 254, 254);
+}
+.icon-nri-logo:before {
+  content: "\e90c";
+}
+.icon-hamburger:before {
+  content: "\e905";
+}
+.icon-cheveron-left:before {
+  content: "\e90e";
+}
+.icon-cheveron-right:before {
+  content: "\e90d";
 }

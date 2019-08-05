@@ -43,7 +43,6 @@
 
 .header-right .right-menu li {
     list-style: none;
-    
 }
 
 .header-right a {
@@ -76,19 +75,33 @@
 }
 
 #pageBody .pageNavi {
-    margin-bottom: 25px;
+    margin: 130px 0 25px 140px;
 }
 
-#pageBody .pageNavi .topicPath {
-    margin-top: 60px;
-    margin-left: 140px;
+#pageBody .pageNavi ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#pageBody .pageNavi p {
+#pageBody .pageNavi ul li {
+    list-style: none;
     font-size: 12px;
-    line-height: 18px;
-    color: #999999;
+    color: #999;
 }
+
+#pageBody .pageNavi a {
+    text-decoration: none;
+    color: #999;
+}
+
+#pageBody .pageNavi .icon-cheveron-right:before {
+    display: inline-block;
+    content: "\e90d";
+    vertical-align: middle;
+    font-size: 15px;
+    color: #231815;
+    -webkit-text-stroke: #ffffff 1px;
+  }
 
 /* トップイメージ */
 #pageBody .nriImage {
@@ -192,17 +205,21 @@
 }
 
 .nri-bussiness .btn {
+   text-align: center;
+}
+
+.nri-bussiness .btn a {
     text-align: center;
-    width: 300px;
+    vertical-align: middle;
     margin: 0 auto;
     margin-bottom: 80px;
     background-color: #005bac;
     border: 1px solid #005bac;
-}
-
-.nri-bussiness .btn a {
+    line-height: 1.2;
+    display: inline-block;
+    padding: 15px 20px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -212,14 +229,18 @@
     width: 30px;
 }
 
-.nri-bussiness p img {
+.nri-bussiness img {
     vertical-align: middle;
     line-height: 1.2;
 }
 
 /* DXの取り組み事例 */
+.nri-contents {
+    width: 1000px;
+}
+
 .nri-contents .jornal-image {
-    width: 820px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -262,6 +283,11 @@
     border-radius: 10px;
 }
 
+.nri-bussiness {
+    width: 800px;
+    margin: 0 auto;
+}
+
 .nri-bussiness .derection {
     width: 80%;
     margin: 0 auto;
@@ -286,7 +312,7 @@
 
 .nri-bussiness .nri-strength {
     clear: both;
-    width: 820px;
+    width: 800px;
     margin: 0 auto;
     margin-top: 80px;
     padding-bottom: 35px;
@@ -306,27 +332,43 @@
     align-items: center;
 }
 
-.nri-bussiness .nri-strength .box-cell li {
-    list-style: none;
+.nri-bussiness .nri-strength .box-cell a {
     width: 195px;
     height: 40px;
-    text-align: center;
+    align-items: center;
     padding: 15px 20px;
-    margin: 0px 10px 10px 10px;
+    margin: 0px 10px 20px 10px;
     line-height: 1.2;
     border: 1px solid #CCCCCC;
     background-color: #FFFFFF;
-    display: table;
-}
-
-.nri-bussiness .nri-strength .box-cell li a {
+    display: inline-flex;
     text-decoration: none;
     font-size: 16px;
     word-break: normal;
     color: #0c419a;
-    display: table-cell;
     vertical-align: middle;
+    position: relative;
 }
+
+.nri-bussiness .nri-strength .box-cell a .icon-cheveron-right:before {
+    display: inline-block;
+    position: absolute;
+    top: 29px;
+    left: 5px;
+    content: "\e90d";
+    vertical-align: middle;
+    font-size: 15px;
+    color: #231815;
+    -webkit-text-stroke: #ffffff 1px;
+  }
+
+.nri-bussiness .nri-strength .box-cell a p {
+    display: table-cell;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
 
 .nri-bussiness .nri-strength .box-cell2 {
     display: flex;
@@ -334,26 +376,41 @@
     align-items: center;
 }
 
-.nri-bussiness .nri-strength .box-cell2 li {
-    list-style: none;
+.nri-bussiness .nri-strength .box-cell2 a {
     width: 195px;
     height: 20px;
-    text-align: center;
+    align-items: center;
     padding: 15px 20px;
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
     line-height: 1.2;
     border: 1px solid #CCCCCC;
     background-color: #FFFFFF;
-    display: table;
-}
-
-.nri-bussiness .nri-strength .box-cell2 a {
+    display: inline-flex;
     text-decoration: none;
     font-size: 16px;
     word-break: normal;
     color: #0c419a;
-    display: table-cell;
     vertical-align: middle;
+    position: relative;
+}
+
+.nri-bussiness .nri-strength .box-cell2 a .icon-cheveron-right:before {
+    display: inline-block;
+    position: absolute;
+    top: 19px;
+    left: 5px;
+    content: "\e90d";
+    vertical-align: middle;
+    font-size: 15px;
+    color: #231815;
+    -webkit-text-stroke: #ffffff 1px;
+  }
+
+.nri-bussiness .nri-strength .box-cell2 a p {
+    display: table-cell;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #pageBody .nri-bussiness .sns-share {
@@ -561,4 +618,14 @@ footer {
 #footer .copy-right p{
     font-size: 10px;
     color: #333;
+}
+
+.arrow{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
 }

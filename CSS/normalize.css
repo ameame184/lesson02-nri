@@ -1,11 +1,10 @@
 html,body {
     padding: 0;
     margin:  0;
-    background: #FFFFFF;
 }
 
-p {
-    font-family: "Noto Sans JP", sans-serif;
+html,body,a,p {
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 ul, li, a, span {
