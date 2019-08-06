@@ -168,6 +168,7 @@
 
 
 #pageBody .sns-share a {
+    text-decoration: none;
     display: inline-block;
     width: 25px;
 }
@@ -372,6 +373,11 @@
     position: relative;
 }
 
+.nri-bussiness .nri-strength .box-cell a:hover {
+    background: #f4f4f4;
+    transition: 0.3s;
+}
+
 .nri-bussiness .nri-strength .box-cell a .icon-cheveron-right:before {
     display: inline-block;
     position: absolute;
@@ -414,6 +420,11 @@
     color: #0c419a;
     vertical-align: middle;
     position: relative;
+}
+
+.nri-bussiness .nri-strength .box-cell2 a:hover {
+    background: #f4f4f4;
+    transition: 0.3s;
 }
 
 .nri-bussiness .nri-strength .box-cell2 a .icon-cheveron-right:before {
@@ -480,6 +491,8 @@
 #pageBody2 .CompanyInfo ul li {
     list-style: none;
     width: 250px;
+    position: relative;
+    height: 40px;
 }
 
 #pageBody2 .CompanyInfo ul li a {
@@ -488,8 +501,19 @@
     color: #0c419a;
     font-size: 14px;
     width: 250px;
-    margin: 10px;
-    padding-left: 10px;
+    margin: 0 10px 10px 0;
+    padding-left: 15px;
+}
+
+#pageBody2 .CompanyInfo ul li a .icon-cheveron-right:before {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    content: "\e90d";
+    font-size: 15px;
+    color: #231815;
+    -webkit-text-stroke: #ffffff 1px;
 }
 
 #pageBody2 .CompanyInfo ul li a:hover {
@@ -500,36 +524,58 @@
     margin-top: 30px;
 }
 
-.follow-us {
-    width: 100%;
-    text-align: center;
+#pageBody2 .CompanyInfo .section-previous ul li a .icon-cheveron-left:before {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    content: "\e90e";
+    font-size: 15px;
+    color: #231815;
+    -webkit-text-stroke: #ffffff 1px;
 }
 
-.follow-us .sns-share {
+/* snsアイコン大 */
+.follow-us {
+    width: 100%;
     padding: 40px 0;
     border-top: 2px solid #999;
     border-bottom: 2px solid #999;
+}
+
+.follow-us .sns-share {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
 
 .follow-us .sns-share .share {
     font-size: 20px;
     font-weight: 700;
     color: #005bac;
+    display: flex;
+}
+
+.follow-us .sns-share .btn-sns {
+    margin-left: 40px;
+}
+
+.follow-us .sns-share a {
+    text-decoration: none;
+    width: 25px;
 }
 
 .follow-us .sns-share .icon-facebook {
     font-size: 28px;
-    margin-left: 35px;
 }
 
 .follow-us .sns-share .icon-twitter {
     font-size: 28px;
-    margin-left: 35px;
 }
 
 .follow-us .sns-share .icon-linkedin {
     font-size: 28px;
-    margin-left: 35px;
 }
 
 /* フッター */
@@ -566,7 +612,6 @@ footer {
 #footer .footer-index .section-index h3 {
     box-sizing: border-box;
     font-size: 16px;
-    padding: 15px 0px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
@@ -574,8 +619,21 @@ footer {
 #footer .footer-index .section-index h3 a {
     display: inline-block;
     width: 100%;
+    padding: 15px 0 15px 15px;
     color: #666;
     text-decoration: none;
+    position: relative;
+}
+
+#footer .footer-index .section-index h3 a .icon-cheveron-right:before {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    content: "\e90d";
+    font-size: 15px;
+    color: #231815;
+    -webkit-text-stroke: #ffffff 1px;
 }
 
 #footer .footer-index .section-index h3 a:hover {
@@ -597,6 +655,19 @@ footer {
     color: #666;
     text-decoration: none;
     width: 100%;
+    padding-left: 15px;
+    position: relative;
+}
+
+#footer .footer-index .section-index ul li a .icon-cheveron-right:before {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    content: "\e90d";
+    font-size: 15px;
+    color: #231815;
+    -webkit-text-stroke: #ffffff 1px;
 }
 
 #footer .footer-index .section-index ul li a:hover {
@@ -642,12 +713,3 @@ footer {
     color: #333;
 }
 
-.arrow{
-    position: relative;
-    display: inline-block;
-    padding: 0 0 0 16px;
-    color: #000;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: 15px;
-}
