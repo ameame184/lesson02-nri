@@ -12,16 +12,18 @@
 }
 
 .header-logo {
-    height: 0px;
-    float: left;
-    padding-left: 55px;
+    width: 100%;
+    position: relative;
 }
 
-.header-logo a {
+.header-logo  a {
     text-decoration: none;
 }
 
 .header-logo .icon-nri-logo {
+    position: absolute;
+    top: 3px;
+    left: 55px;
     font-size: 56px;
     color: #005BAC;
 }
@@ -30,43 +32,51 @@
     float: right;
 }
 
-.header-right ul li:after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 .right-menu {
     display: flex;
-    width: 50%;
-}
-
-.header-right .right-menu li {
-    list-style: none;
 }
 
 .header-right a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #005BAC;
+    height: 60px;
+    width: 60px;
+    position: relative;
+}
+
+.header-right a:hover {
+    color: #666;
+    opacity: 0.5;
 }
 
 .header-right .right-menu .header-search {
     font-size: 26px;
-    padding-top: 8px;
 }
 
 .header-right .right-menu .header-global {
     font-size: 26px;
-    padding-top: 8px;
-    margin-left: 35px;
+}
+
+.header-hamburger {
+    margin-left: 25px;
 }
 
 .header-hamburger img {
     clear: both;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     height: 60px;
     width: 60px;
-    margin-left: 44px;
     color: #005BAC;
+}
+
+.header-hamburger a:hover {
+    opacity: 1;
 }
 
 /* パンくずナビ */
@@ -143,11 +153,14 @@
     width: 820px;
     margin: 0 auto;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 #pageBody .sns-share .share {
-    font-family: Ariel;
+    font-family: Arial;
+    font-weight: 700;
     font-size: 10px;
+    color: #666;
 }
 
 #pageBody .sns-share .icon-facebook {
