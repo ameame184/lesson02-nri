@@ -162,20 +162,29 @@
     font-size: 10px;
     color: #666;
 }
-
-#pageBody .sns-share .icon-facebook {
-    font-size: 25px;
+#pageBody .sns-share .btn-sns {
     margin-left: 23px;
 }
 
+
+#pageBody .sns-share a {
+    display: inline-block;
+    width: 25px;
+}
+
+#pageBody .sns-share .icon-facebook {
+    font-size: 25px;
+}
+
+
 #pageBody .sns-share .icon-twitter {
     font-size: 25px;
-    margin-left: 23px;
+    
 }
 
 #pageBody .sns-share .icon-linkedin {
     font-size: 25px;
-    margin-left: 23px;
+    
 }
 
 
