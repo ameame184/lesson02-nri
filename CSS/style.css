@@ -131,6 +131,7 @@
     font-size: 20px;
     line-height: 28px;
     color: #ffffff;
+    font-weight: 400;
 }
 
 .imageTitle h1 {
@@ -191,12 +192,12 @@
 
 /* NRIのビジネス戦略 */
 .nri-bussiness {
-    width: 80%;
+    width: 820px;
     margin: 0 auto;
 }
 
 .nri-bussiness .nri-contents {
-    width: 820px;
+    width: 100%;
     margin: 0 auto;
 }
     
@@ -210,6 +211,7 @@
 
 .nri-bussiness .nri-contents h2 {
     font-size: 22px;
+    line-height: 33px;
 }
 
 .nri-bussiness .nri-contents h2 .sub-title {
@@ -219,6 +221,21 @@
 .nri-bussiness .nri-contents .bussiness-content {
     clear: both;
     margin-bottom: 60px;
+}
+
+.nri-bussiness .nri-contents .bussiness-content p {
+    font-size: 16px;
+    line-height: 33px;
+    color: #333;
+}
+
+.nri-bussiness .nri-contents .bussiness-content .first-content {
+    width: 810px;
+    margin-bottom: 16px;
+}
+
+.nri-bussiness .nri-contents .bussiness-content .second-content {
+    width: 810px;
 }
 
 .nri-bussiness .nri-contents img {
@@ -245,6 +262,24 @@
     font-weight: 300;
     text-decoration: none;
     color: #FFFFFF;
+    position: relative;
+}
+
+.nri-bussiness .btn a:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.nri-bussiness .btn a .icon-cheveron-right:before {
+    display: inline-block;
+    position: absolute;
+    top: 29px;
+    left: 5px;
+    content: "\e90d";
+    vertical-align: middle;
+    font-size: 15px;
+    color: #FFFFFF;
+    -webkit-text-stroke: #005bac 1px;
 }
 
 .nri-bussiness .btn img {
@@ -263,39 +298,65 @@
 }
 
 .nri-contents .jornal-image {
-    width: 100%;
+    width: 820px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
-
 .nri-contents .jornal-image .active-case {
     width: 185px;
     margin-right: 20px;
+    margin-bottom: 25px;
+    position: relative;
 }
 
-.nri-contents .jornal-image .active-case .image-title {
+.nri-contents .jornal-image .active-case .image-box {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.nri-contents .jornal-image .active-case .image-box .image-title {
+    width: 180px;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 3px 0 3px 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+
+.nri-contents .jornal-image .active-case .image-box p{
     background-color: #005BAC;
     color: #FFFFFF;
-    font-size: 12px;
     font-weight: 500;
-    width: 175px;
-    padding: 5px 5px;
-    position: relative;
-    top: 40px;
 }
 
-.nri-contents .jornal-image .active-case img {
-    width: 185px;
-    height: 185px;
+.nri-contents .jornal-image .active-case a figure {
+    display: table-cell;
+    width: 200px;
+    height: 200px;
+}
+
+.nri-contents .jornal-image .active-case a img {
     margin-bottom: 0;
 }
 
-.nri-contents .jornal-image .active-case p {
-    font-size: 14px;
+.nri-contents .jornal-image .active-case .image-contents {
+    padding: 10px 0;
 }
 
-.nri-contents .jornal-image .active-case a {
+.nri-contents .jornal-image .active-case .image-contents a {
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #333333;
+}
+
+.nri-contents .jornal-image .active-case .btn-category a {
+    display: inline-flex;
     font-size: 12px;
     line-height: 1.4;
     border: 1px solid #CCCCCC;
@@ -303,20 +364,32 @@
     color: #333333;
     height: auto;
     padding: 6px 10px;
+    margin-bottom: 5px;
     border-radius: 10px;
 }
 
+.nri-contents .jornal-image .active-case a:hover {
+    text-decoration: underline;
+}
+
+.nri-contents .jornal-image .active-case .time {
+    color: #666666;
+    font-size: 14px;
+}
+
+/* derection */
 .nri-bussiness {
-    width: 800px;
+    width: 820px;
     margin: 0 auto;
 }
 
 .nri-bussiness .derection {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .nri-bussiness .derection-first {
+    
     float: left;
 }
 
@@ -333,9 +406,10 @@
     text-decoration: underline;
 }
 
+/* NRIの強み */
 .nri-bussiness .nri-strength {
     clear: both;
-    width: 800px;
+    width: 820px;
     margin: 0 auto;
     margin-top: 80px;
     padding-bottom: 35px;
@@ -346,7 +420,7 @@
     font-size: 16px;
     color: #333333;
     line-height: 30px;
-    padding: 30px 0 0 20px;
+    padding: 30px 0 0 30px;
 }
 
 .nri-bussiness .nri-strength .box-cell {
@@ -708,8 +782,13 @@ footer {
     text-decoration: none;
 }
 
+#footer .globalNavi ul li a:hover {
+    text-decoration: underline;
+}
+
 #footer .copy-right p{
     font-size: 10px;
     color: #333;
+    font-family: Helvetica;
 }
 
