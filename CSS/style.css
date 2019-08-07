@@ -385,16 +385,16 @@
 
 .nri-bussiness .derection {
     width: 100%;
-    margin: 0 auto;
 }
 
 .nri-bussiness .derection-first {
-    
     float: left;
+    margin: 20px 0;
 }
 
 .nri-bussiness .derection-second {
     float: right;
+    margin: 20px 0;
 }
 
 .nri-bussiness .derection a {
