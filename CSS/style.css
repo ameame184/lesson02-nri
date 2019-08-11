@@ -91,6 +91,7 @@
 .pageBody .pageNavi ul {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 
 .pageBody .pageNavi ul li {
