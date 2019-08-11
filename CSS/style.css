@@ -733,7 +733,7 @@
 .footer .footer-index .section-index ul li a .icon-cheveron-right:before {
     display: inline-block;
     position: absolute;
-    top: 5px;
+    top: 2px;
     left: -5px;
     content: "\e90d";
     font-size: 15px;
